@@ -6,7 +6,7 @@ originalshreyaom: contains towhee_input, towhee_input~, towhee_input2, towhee_in
 **How to use** <br/>
 ShreyaOm: add this folder to Examples folder in your local towhee folder <br/>
 add towhee_ff_ShreyaOm and towhee_ff_TIP4P2005H to Force Fields folder in your local towhee folder <br/>
-on the terminal, locate to the ShreyaOm folder and type `/path/to/towhee-8.2.3/Soucre/towhee` <br/>
+on the terminal, locate to the ShreyaOm folder and type `/path/to/towhee-8.2.3/Source/towhee` <br/>
 <br/>
 **links to documentation** <br/>
 Examples manual: http://towhee.sourceforge.net/examples/example_manual.html <br/>
