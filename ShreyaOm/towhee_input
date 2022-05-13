@@ -124,8 +124,8 @@ cbmc_setting_style
 ffnumber
 2
 ff_filename
-/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
-/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
+/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
+/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
 classical_potential
 'Lennard-Jones'      
 classical_mixrule
@@ -163,7 +163,7 @@ forcefield
 'TIP4P2005'
 charge_assignment
 'manual'
-unit ntype qqatom
+unit ntype qqatom 
 1    'O'  0.000d0
 vibration
 3

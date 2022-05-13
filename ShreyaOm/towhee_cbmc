@@ -1,534 +1,85 @@
 cbmc_fit_strategy
 'equilibrium                   '
 cbmc_nb_one_generation 
-'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       '
-'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       '
-'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       '
+'uniform                       ' 'uniform                       '
+'uniform                       ' 'uniform                       '
 nch_nb_one
-          10          10          10          10          10
+          10          10
 nch_nb
-          10          10          10          10          10
+          10          10
 nch_pre_nb
-           1           1           1           1           1
+           1           1
 cbmc_dihedral_generation
 'ideal                         '
 nch_tor
-         360         360         360         360         360
+         360         360
 nch_tor_connect
-         360         360         360         360         360
+         360         360
 cbmc_bend_generation
 'ideal                         '
 nch_bend_a
-        1000        1000        1000        1000        1000
+        1000        1000
 nch_bend_b
-        1000        1000        1000        1000        1000
+        1000        1000
 max_bond_length
    3.0000000000000000     
 cbmc_bond_generation
 'r^2 with bounds               '
 nch_vib
-        1000        1000        1000        1000        1000
+        1000        1000
 two_bond_fixed_endpoint_bias_style
 'analytic Boltzmann dihedral energy sum            '
 three_bond_fixed_endpoint_bias_style
 'analytic using max and min 2-4 distance           '
 Determining CBMC Arbitrary Trial Distributions: Bonds
+Moltyp:     1 Units:     1     2  ATD: Delta                    
+      Length:  1.0013051
 Moltyp:     1 Units:     1     3  ATD: Delta                    
-      Length:  1.3347335
-Moltyp:     1 Units:     1     5  ATD: Delta                    
-      Length:  1.3837133
-Moltyp:     1 Units:     1     7  ATD: Delta                    
-      Length:  1.4786840
-Moltyp:     1 Units:     2     3  ATD: Delta                    
-      Length:  1.3343815
-Moltyp:     1 Units:     2     4  ATD: Delta                    
-      Length:  1.3833022
-Moltyp:     1 Units:     2     6  ATD: Delta                    
-      Length:  1.4675265
+      Length:  1.0013051
+Moltyp:     1 Units:     1     4  ATD: Delta                    
+      Length:  0.1546000
+Moltyp:     1 Units:     2     1  ATD: Delta                    
+      Length:  1.0013051
 Moltyp:     1 Units:     3     1  ATD: Delta                    
-      Length:  1.3347335
-Moltyp:     1 Units:     3     2  ATD: Delta                    
-      Length:  1.3343815
-Moltyp:     1 Units:     4     2  ATD: Delta                    
-      Length:  1.3833022
-Moltyp:     1 Units:     4     5  ATD: Delta                    
-      Length:  1.3596511
-Moltyp:     1 Units:     5     1  ATD: Delta                    
-      Length:  1.3837133
-Moltyp:     1 Units:     5     4  ATD: Delta                    
-      Length:  1.3596511
-Moltyp:     1 Units:     6     2  ATD: Delta                    
-      Length:  1.4675265
-Moltyp:     1 Units:     7     1  ATD: Delta                    
-      Length:  1.4786840
-Moltyp:     1 Units:     7     8  ATD: Delta                    
-      Length:  1.5319253
-Moltyp:     1 Units:     8     7  ATD: Delta                    
-      Length:  1.5319253
-Moltyp:     1 Units:     8     9  ATD: Delta                    
-      Length:  1.5360635
-Moltyp:     1 Units:     9     8  ATD: Delta                    
-      Length:  1.5360635
-Moltyp:     1 Units:     9    10  ATD: Delta                    
-      Length:  1.5315107
-Moltyp:     1 Units:    10     9  ATD: Delta                    
-      Length:  1.5315107
-Moltyp:     2 Units:     1     7  ATD: Delta                    
-      Length:  1.6795779
-Moltyp:     2 Units:     2     7  ATD: Delta                    
-      Length:  1.6653825
-Moltyp:     2 Units:     3     7  ATD: Delta                    
-      Length:  1.6197024
-Moltyp:     2 Units:     4     7  ATD: Delta                    
-      Length:  1.6181897
-Moltyp:     2 Units:     5     7  ATD: Delta                    
-      Length:  1.6169780
-Moltyp:     2 Units:     6     7  ATD: Delta                    
-      Length:  1.6770754
-Moltyp:     2 Units:     7     1  ATD: Delta                    
-      Length:  1.6795779
-Moltyp:     2 Units:     7     2  ATD: Delta                    
-      Length:  1.6653825
-Moltyp:     2 Units:     7     3  ATD: Delta                    
-      Length:  1.6197024
-Moltyp:     2 Units:     7     4  ATD: Delta                    
-      Length:  1.6181897
-Moltyp:     2 Units:     7     5  ATD: Delta                    
-      Length:  1.6169780
-Moltyp:     2 Units:     7     6  ATD: Delta                    
-      Length:  1.6770754
-Moltyp:     3 Units:     1     2  ATD: Delta                    
-      Length:  0.9572000
-Moltyp:     3 Units:     1     3  ATD: Delta                    
-      Length:  0.9572000
-Moltyp:     3 Units:     1     4  ATD: Delta                    
+      Length:  1.0013051
+Moltyp:     1 Units:     4     1  ATD: Delta                    
       Length:  0.1546000
-Moltyp:     3 Units:     2     1  ATD: Delta                    
-      Length:  0.9572000
-Moltyp:     3 Units:     3     1  ATD: Delta                    
-      Length:  0.9572000
-Moltyp:     3 Units:     4     1  ATD: Delta                    
-      Length:  0.1546000
-Moltyp:     4 Units:     1     2  ATD: Delta                    
-      Length:  1.1600000
-Moltyp:     4 Units:     2     1  ATD: Delta                    
-      Length:  1.1600000
-Moltyp:     4 Units:     2     3  ATD: Delta                    
-      Length:  1.1600000
-Moltyp:     4 Units:     3     2  ATD: Delta                    
-      Length:  1.1600000
-Moltyp:     5 Units:     1     2  ATD: Delta                    
+Moltyp:     2 Units:     1     2  ATD: Delta                    
       Length:  0.5500000
-Moltyp:     5 Units:     2     1  ATD: Delta                    
+Moltyp:     2 Units:     2     1  ATD: Delta                    
       Length:  0.5500000
-Moltyp:     5 Units:     2     3  ATD: Delta                    
+Moltyp:     2 Units:     2     3  ATD: Delta                    
       Length:  0.5500000
-Moltyp:     5 Units:     3     2  ATD: Delta                    
+Moltyp:     2 Units:     3     2  ATD: Delta                    
       Length:  0.5500000
 Determining CBMC Arbitrary Trial Distributions: Angle A
-Moltyp:     1 Units:     1     3     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  108.9577
-Moltyp:     1 Units:     1     5     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  107.1494
-Moltyp:     1 Units:     1     7     8 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  113.0425
-Moltyp:     1 Units:     2     3     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  108.9577
-Moltyp:     1 Units:     2     4     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  107.0127
-Moltyp:     1 Units:     3     1     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  108.3814
-Moltyp:     1 Units:     3     1     7 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  125.0661
-Moltyp:     1 Units:     3     2     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  108.4984
-Moltyp:     1 Units:     3     2     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  124.7146
-Moltyp:     1 Units:     4     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  108.4984
-Moltyp:     1 Units:     4     2     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  126.5991
-Moltyp:     1 Units:     4     5     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  107.1494
-Moltyp:     1 Units:     5     1     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  108.3814
-Moltyp:     1 Units:     5     1     7 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  126.4909
-Moltyp:     1 Units:     5     4     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  107.0127
-Moltyp:     1 Units:     6     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  124.7146
-Moltyp:     1 Units:     6     2     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  126.5991
-Moltyp:     1 Units:     7     1     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  125.0661
-Moltyp:     1 Units:     7     1     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  126.4909
-Moltyp:     1 Units:     7     8     9 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  115.4513
-Moltyp:     1 Units:     8     7     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  113.0425
-Moltyp:     1 Units:     8     9    10 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  114.3625
-Moltyp:     1 Units:     9     8     7 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  115.4513
-Moltyp:     1 Units:    10     9     8 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  114.3625
-Moltyp:     2 Units:     1     7     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   87.5037
-Moltyp:     2 Units:     1     7     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.0024
-Moltyp:     2 Units:     1     7     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  176.6470
-Moltyp:     2 Units:     1     7     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   89.9328
-Moltyp:     2 Units:     1     7     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   87.2551
-Moltyp:     2 Units:     2     7     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   87.5037
-Moltyp:     2 Units:     2     7     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.1657
-Moltyp:     2 Units:     2     7     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.2847
-Moltyp:     2 Units:     2     7     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  176.6104
-Moltyp:     2 Units:     2     7     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   87.7811
-Moltyp:     2 Units:     3     7     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.0024
-Moltyp:     2 Units:     3     7     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.1657
-Moltyp:     2 Units:     3     7     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   92.5252
-Moltyp:     2 Units:     3     7     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   92.0526
-Moltyp:     2 Units:     3     7     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  176.6423
-Moltyp:     2 Units:     4     7     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  176.6470
-Moltyp:     2 Units:     4     7     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.2847
-Moltyp:     2 Units:     4     7     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   92.5252
-Moltyp:     2 Units:     4     7     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   92.1770
-Moltyp:     2 Units:     4     7     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.1425
-Moltyp:     2 Units:     5     7     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   89.9328
-Moltyp:     2 Units:     5     7     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  176.6104
-Moltyp:     2 Units:     5     7     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   92.0526
-Moltyp:     2 Units:     5     7     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   92.1770
-Moltyp:     2 Units:     5     7     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   89.8823
-Moltyp:     2 Units:     6     7     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   87.2551
-Moltyp:     2 Units:     6     7     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   87.7811
-Moltyp:     2 Units:     6     7     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  176.6423
-Moltyp:     2 Units:     6     7     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   90.1425
-Moltyp:     2 Units:     6     7     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):   89.8823
-Moltyp:     3 Units:     2     1     3 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     2     1     3 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):  104.5200
-Moltyp:     3 Units:     2     1     4 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     2     1     4 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):   52.2600
-Moltyp:     3 Units:     3     1     2 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     3     1     2 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):  104.5200
-Moltyp:     3 Units:     3     1     4 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     3     1     4 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):   52.2600
-Moltyp:     3 Units:     4     1     2 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     4     1     2 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):   52.2600
-Moltyp:     3 Units:     4     1     3 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     4     1     3 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):   52.2600
-Moltyp:     4 Units:     1     2     3 Peaks:   1 ATD: Delta                    
+Moltyp:     2 Units:     1     2     3 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):  180.0000
-Moltyp:     4 Units:     3     2     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  180.0000
-Moltyp:     5 Units:     1     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Allowed Angle (deg):  180.0000
-Moltyp:     5 Units:     3     2     1 Peaks:   1 ATD: Delta                    
+Moltyp:     2 Units:     3     2     1 Peaks:   1 ATD: Delta                    
       Peak:   1 Allowed Angle (deg):  180.0000
 Determining CBMC Arbitrary Trial Distributions: Angle B
-Moltyp:     1 Units:     3     1     5     7 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  126.4909
-Moltyp:     1 Units:     3     1     7     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  126.4909
-Moltyp:     1 Units:     3     2     4     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  126.5991
-Moltyp:     1 Units:     3     2     6     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  126.5991
-Moltyp:     1 Units:     4     2     3     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  124.7146
-Moltyp:     1 Units:     4     2     6     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  124.7146
-Moltyp:     1 Units:     5     1     3     7 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  125.0661
-Moltyp:     1 Units:     5     1     7     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  125.0661
-Moltyp:     1 Units:     6     2     3     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  108.4984
-Moltyp:     1 Units:     6     2     4     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  108.4984
-Moltyp:     1 Units:     7     1     3     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  108.3814
-Moltyp:     1 Units:     7     1     5     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  108.3814
-Moltyp:     2 Units:     1     7     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     1     7     2     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     1     7     2     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     1     7     2     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     1     7     3     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     1     7     3     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     1     7     3     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     1     7     3     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     1     7     4     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     1     7     4     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     1     7     4     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     1     7     4     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     1     7     5     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     1     7     5     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     1     7     5     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     1     7     5     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     1     7     6     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     1     7     6     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     1     7     6     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     1     7     6     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     2     7     1     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     2     7     1     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     2     7     1     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     2     7     1     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     2     7     3     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     2     7     3     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     2     7     3     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     2     7     3     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     2     7     4     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     2     7     4     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     2     7     4     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     2     7     4     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     2     7     5     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     2     7     5     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     2     7     5     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     2     7     5     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     2     7     6     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     2     7     6     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     2     7     6     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     2     7     6     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     3     7     1     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     3     7     1     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     3     7     1     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     3     7     1     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     3     7     2     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     3     7     2     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     3     7     2     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     3     7     2     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     3     7     4     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     3     7     4     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     3     7     4     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     3     7     4     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     3     7     5     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     3     7     5     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     3     7     5     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     3     7     5     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     3     7     6     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     3     7     6     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     3     7     6     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     3     7     6     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     4     7     1     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     4     7     1     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     4     7     1     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     4     7     1     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     4     7     2     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     4     7     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     4     7     2     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     4     7     2     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     4     7     3     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     4     7     3     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     4     7     3     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     4     7     3     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     4     7     5     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     4     7     5     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     4     7     5     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     4     7     5     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     4     7     6     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     4     7     6     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     4     7     6     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     4     7     6     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.8823
-Moltyp:     2 Units:     5     7     1     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     5     7     1     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     5     7     1     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     5     7     1     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     5     7     2     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     5     7     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     5     7     2     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     5     7     2     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     5     7     3     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     5     7     3     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     5     7     3     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     5     7     3     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     5     7     4     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     5     7     4     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     5     7     4     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     5     7     4     6 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     5     7     6     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.2551
-Moltyp:     2 Units:     5     7     6     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.7811
-Moltyp:     2 Units:     5     7     6     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6423
-Moltyp:     2 Units:     5     7     6     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1425
-Moltyp:     2 Units:     6     7     1     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     6     7     1     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     6     7     1     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     6     7     1     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     6     7     2     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   87.5037
-Moltyp:     2 Units:     6     7     2     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     6     7     2     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     6     7     2     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     6     7     3     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.0024
-Moltyp:     2 Units:     6     7     3     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.1657
-Moltyp:     2 Units:     6     7     3     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     6     7     3     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     6     7     4     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6470
-Moltyp:     2 Units:     6     7     4     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   90.2847
-Moltyp:     2 Units:     6     7     4     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.5252
-Moltyp:     2 Units:     6     7     4     5 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     2 Units:     6     7     5     1 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   89.9328
-Moltyp:     2 Units:     6     7     5     2 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):  176.6104
-Moltyp:     2 Units:     6     7     5     3 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.0526
-Moltyp:     2 Units:     6     7     5     4 Peaks:   1 ATD: Delta                    
-      Peak:   1 Rigid Angle (deg):   92.1770
-Moltyp:     3 Units:     2     1     3     4 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     2     1     3     4 Peaks:   1 ATD: Delta                    
       Peak:   1 Rigid Angle (deg):   52.2600
-Moltyp:     3 Units:     2     1     4     3 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     2     1     4     3 Peaks:   1 ATD: Delta                    
       Peak:   1 Rigid Angle (deg):   52.2600
-Moltyp:     3 Units:     3     1     2     4 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     3     1     2     4 Peaks:   1 ATD: Delta                    
       Peak:   1 Rigid Angle (deg):   52.2600
-Moltyp:     3 Units:     3     1     4     2 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     3     1     4     2 Peaks:   1 ATD: Delta                    
       Peak:   1 Rigid Angle (deg):   52.2600
-Moltyp:     3 Units:     4     1     2     3 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     4     1     2     3 Peaks:   1 ATD: Delta                    
       Peak:   1 Rigid Angle (deg):  104.5200
-Moltyp:     3 Units:     4     1     3     2 Peaks:   1 ATD: Delta                    
+Moltyp:     1 Units:     4     1     3     2 Peaks:   1 ATD: Delta                    
       Peak:   1 Rigid Angle (deg):  104.5200
 Determining Autofit Gaussian dihedral parameters

@@ -13,21 +13,21 @@ temperature
 pressure
    2000.0000000000000     
 nmolty
-           5
+           2
 nmolectyp
-           6           6        1368          48          50
+        1088         100
 numboxes
-           3
+           2
 stepstyle
-'moves   '
+'cycles  '
 nstep
            5
 controlstyle
 'manual              '
 printfreq
-        1000
+           1
 blocksize
-       10000
+           1
 moviefreq
        50000
 backupfreq
@@ -37,7 +37,7 @@ restartfreq
 runoutput
 'blocks              '
 pdb_output_freq
-           1
+           5
 loutdft
  F
 loutlammps
@@ -57,7 +57,7 @@ trmaxdispfreq
 volmaxdispfreq
           10
 chempotperstep
-           0           0           0           0           0
+           0           0
 loutchempotdata
  F
 linit
@@ -65,35 +65,28 @@ linit
 initboxtype
 'dimensions          '
 initstyle
- 'full cbmc           ' 'template            ' 'coords              ' 'coords              ' 'full cbmc           ' 
- 'full cbmc           ' 'template            ' 'full cbmc           ' 'full cbmc           ' 'full cbmc           ' 
- 'full cbmc           ' 'template            ' 'full cbmc           ' 'full cbmc           ' 'full cbmc           ' 
+ 'coords              ' 'full cbmc           ' 
+ 'full cbmc           ' 'full cbmc           ' 
 initlattice
-'simple cubic        ' 'simple cubic        ' 'none                ' 'none                ' 'simple cubic        '
-'simple cubic        ' 'simple cubic        ' 'simple cubic        ' 'simple cubic        ' 'simple cubic        '
-'simple cubic        ' 'simple cubic        ' 'simple cubic        ' 'simple cubic        ' 'simple cubic        '
+'none                ' 'none                '
+'simple cubic        ' 'simple cubic        '
 initmol
-           0           0         368          48           0
-           6           6        1000           0           0
-           0           0           0           0          50
+        1088           0
+           0         100
 inix iniy iniz
-           8           8           8
           11          11          11
-           7           7           7
+           5           5           5
 hmatrix
-   23.870000000000001        0.0000000000000000        0.0000000000000000     
-   0.0000000000000000        23.870000000000001        0.0000000000000000     
-   0.0000000000000000        0.0000000000000000        23.870000000000001     
-   50.000000000000000        0.0000000000000000        0.0000000000000000     
-   0.0000000000000000        50.000000000000000        0.0000000000000000     
-   0.0000000000000000        0.0000000000000000        50.000000000000000     
-   45.549999999999997        0.0000000000000000        0.0000000000000000     
-   0.0000000000000000        45.549999999999997        0.0000000000000000     
-   0.0000000000000000        0.0000000000000000        45.549999999999997     
+   34.609999999999999        0.0000000000000000        0.0000000000000000     
+   0.0000000000000000        34.609999999999999        0.0000000000000000     
+   0.0000000000000000        0.0000000000000000        34.609999999999999     
+   57.299999999999997        0.0000000000000000        0.0000000000000000     
+   0.0000000000000000        57.299999999999997        0.0000000000000000     
+   0.0000000000000000        0.0000000000000000        57.299999999999997     
 pmvol
 0.0020
           pmvlpr
-          .33000E+00 .67000E+00 .10000E+01
+          .50000E+00 .10000E+01
           rmvol
           .10000E-03
           tavol
@@ -101,10 +94,8 @@ pmvol
 pmcell
 0.0000
           pmcellpr
-          .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           pmcellpt
-          .50000E+00
-          .50000E+00
           .50000E+00
           rmcell
           .10000E+01
@@ -113,43 +104,40 @@ pmcell
 pm2boxrbswap
 0.4000
           pm2rbswmt
-          .00000E+00 .00000E+00 .00000E+00 .10000E+01 .10000E+01
+          .00000E+00 .10000E+01
           pm2rbswpr
-          .33000E+00 .67000E+00 .10000E+01
+          .10000E+01
 pm2boxcbswap
 0.8000
           pm2cbswmt
-          .00000E+00 .00000E+00 .00000E+00 .10000E+01 .10000E+01
+          .00000E+00 .10000E+01
           pm2cbswpr
-          .33000E+00 .67000E+00 .10000E+01
+          .10000E+01
 pm2boxcomswitch
 0.0000
           pm2comswboxpair
-          .10000E+01 .10000E+01 .10000E+01
+          .10000E+01
           pm2comswmolpair
-          .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00
+          .00000E+00
 pm1boxcbswap
 0.0000
           pm1cbswmt
-          .00000E+00 .00000E+00 .00000E+00 .10000E+01 .10000E+01
+          .00000E+00 .10000E+01
 pm1boxcomswitch
 0.0000
           pm1comswbox
-          .00000E+00 .00000E+00 .00000E+00
+          .00000E+00 .00000E+00
           pm1comswpair
-          .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00
+          .00000E+00
 pmavb1
 0.0000
           pmavb1in
           .50000E+00
           pmavb1mt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           pmavb1ct
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           avb1rad
            0.1000
 pmavb2
@@ -157,69 +145,63 @@ pmavb2
           pmavb2in
           .50000E+00
           pmavb2mt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           pmavb2ct
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           avb2rad
            0.1000
 pmavb3
 0.0000
           pmavb3mt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           pmavb3ct
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           avb3rad
            0.1000
 pmcb
 0.8500
           pmcbmt
-          .25000E+00 .50000E+00 .75000E+00 .10000E+01 .10000E+01
+          .50000E+00 .10000E+01
           pmall
-          .00000E+00 .00000E+00 .00000E+00 .00000E+00 .00000E+00
+          .00000E+00 .00000E+00
 pmback
 0.0000
           pmbkmt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
 pmcbside
 0.0000
           pmcbsidemt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
 pmpivot
 0.0000
           pmpivmt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
 pmconrot
 0.0000
           pmcrmt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
 pmcrback
 0.0000
           pmcrbmt
-          .10000E+01 .10000E+01 .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
 pmplane
 0.0000
           pmplanebox
-          .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           planewidth
           .10000E+01
 pmrow
 0.0000
           pmrowbox
-          .10000E+01 .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
           rowwidth
           .10000E+01
 pmtraat
 0.0000
           pmtamt
-          .20000E+00 .40000E+00 .60000E+00 .80000E+00 .10000E+01
+          .33000E+00 .10000E+01
           rmtraa
           .20000E+00
           tatraa
@@ -227,15 +209,15 @@ pmtraat
 pmcomposite
           .90000E+00
 pmcomt
-          .20000E+00 .40000E+00 .60000E+00 .80000E+00 .10000E+01
+          .50000E+00 .10000E+01
 rmcomtra
-          .10000E+02
+          .50000E+00
 rmcomrot
-          .10000E+01
+          .50000E-01
 pmtracm
 0.9500
           pmtcmt
-          .20000E+00 .40000E+00 .60000E+00 .80000E+00 .10000E+01
+          .50000E+00 .10000E+01
           rmtrac
           .50000E+00
           tatrac
@@ -243,7 +225,7 @@ pmtracm
 pmrotate
 1.0000
           pmromt
-          .20000E+00 .40000E+00 .60000E+00 .80000E+00 .10000E+01
+          .50000E+00 .10000E+01
           rmrot
           .50000E-01
           tarot
@@ -257,44 +239,41 @@ cbmc_setting_style
 cbmc_fit_strategy
 'equilibrium                   '
 cbmc_nb_one_generation 
-'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       '
-'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       '
-'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       ' 'uniform                       '
+'uniform                       ' 'uniform                       '
+'uniform                       ' 'uniform                       '
 nch_nb_one
-          10          10          10          10          10
+          10          10
 nch_nb
-          10          10          10          10          10
+          10          10
 nch_pre_nb
-           1           1           1           1           1
+           1           1
 cbmc_dihedral_generation
 'ideal                         '
 nch_tor
-         360         360         360         360         360
+         360         360
 nch_tor_connect
-         360         360         360         360         360
+         360         360
 cbmc_bend_generation
 'ideal                         '
 nch_bend_a
-        1000        1000        1000        1000        1000
+        1000        1000
 nch_bend_b
-        1000        1000        1000        1000        1000
+        1000        1000
 max_bond_length
    3.0000000000000000     
 cbmc_bond_generation
 'r^2 with bounds               '
 nch_vib
-        1000        1000        1000        1000        1000
+        1000        1000
 two_bond_fixed_endpoint_bias_style
 'analytic Boltzmann dihedral energy sum            '
 three_bond_fixed_endpoint_bias_style
 'analytic using max and min 2-4 distance           '
 ffnumber
-           4
+           2
 ff_filename
-../../../ForceFields/towhee_ff_TIP4P2005H                                                                               
-../../../ForceFields/towhee_ff_TraPPE-EH                                                                                
-../../../ForceFields/towhee_ff_Shah2004                                                                                 
-../../../ForceFields/towhee_ff_ShreyaOm                                                                                 
+/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H                                      
+/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm                                        
 classical_potential
 'Lennard-Jones                 '
 classical_mixrule
@@ -325,338 +304,6 @@ nfield
            0
 solvation_style
 'none                '
-input_style
-explicit
-nunit
-          10
-nmaxcbmc
-           4
-lpdbnames
- F
-unit ntype qqatom
-           1           8  0.11100000000000000     
-vibration
-           3
-           3          10
-           5           9
-           7          11
-bending
-           3
-           3           2           6          -1           0           0
-           5           4           9          -1           0           0
-           7           8          13           1           0           0
-torsion
-           4
-           3           2           4           9
-           3           2           6          10
-           5           4           2           4
-           7           8           9           2
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           2           9  0.13300000000000001     
-vibration
-           3
-           3           6
-           4           7
-           6           5
-bending
-           2
-           3           1           6           1           0           0
-           4           5           8           1           0           0
-torsion
-           3
-           3           1           5           7
-           3           1           7           8
-           4           5           1           4
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           3          10  0.23300000000000001     
-vibration
-           2
-           1          10
-           2           6
-bending
-           4
-           1           5          10           1           0           0
-           1           7          11           1           0           0
-           2           4           7           1           0           0
-           2           6           5          -1           0           0
-torsion
-           3
-           1           5           4           5
-           1           7           8           3
-           2           4           5          11
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           4          11   4.0000000000000001E-002
-vibration
-           2
-           2           7
-           5           8
-bending
-           3
-           2           3           7          -1           0           0
-           2           6           4          -1           0           0
-           5           1           9           1           0           0
-torsion
-           3
-           2           3           1           9
-           5           1           3           5
-           5           1           7           6
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           5          12  -1.0000000000000000E-002
-vibration
-           2
-           1           9
-           4           8
-bending
-           3
-           1           3          10          -1           0           0
-           1           7          12           1           0           0
-           4           2           8          -1           0           0
-torsion
-           4
-           1           3           2           7
-           1           7           8           3
-           4           2           3          11
-           4           2           6          12
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           6          13  0.18300000000000000     
-vibration
-           1
-           2           5
-bending
-           2
-           2           3           5           1           0           0
-           2           4           4           1           0           0
-torsion
-           2
-           2           3           1          10
-           2           4           5          12
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           7          14  0.19500000000000001     
-vibration
-           2
-           1          11
-           8          12
-bending
-           3
-           1           3          11          -1           0           0
-           1           5          12          -1           0           0
-           8           9          14           1           0           0
-torsion
-           3
-           1           3           2           8
-           1           5           4           6
-           8           9          10           1
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           8          15  -6.6000000000000003E-002
-vibration
-           2
-           7          12
-           9          13
-bending
-           2
-           7           1          13          -1           0           0
-           9          10          15           1           0           0
-torsion
-           2
-           7           1           3           3
-           7           1           5           3
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           9          16  0.12800000000000000     
-vibration
-           2
-           8          13
-          10          14
-bending
-           1
-           8           7          14          -1           0           0
-torsion
-           1
-           8           7           1           2
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-          10          17  -4.2999999999999997E-002
-vibration
-           1
-           9          14
-bending
-           1
-           9           8          15          -1           0           0
-torsion
-           1
-           9           8           7           1
-angle-angle
-           0
-improper torsion
-           0
-input_style
-explicit
-nunit
-           7
-nmaxcbmc
-           7
-lpdbnames
- F
-unit ntype qqatom
-           1          20 -0.39400000000000002     
-vibration
-           1
-           7          15
-bending
-           5
-           7           2          16           1           0           0
-           7           3          17           1           0           0
-           7           4          18           1           0           0
-           7           5          19           1           0           0
-           7           6          20           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           2          21 -0.39400000000000002     
-vibration
-           1
-           7          16
-bending
-           5
-           7           1          16          -1           0           0
-           7           3          21           1           0           0
-           7           4          22           1           0           0
-           7           5          23           1           0           0
-           7           6          24           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           3          22 -0.39400000000000002     
-vibration
-           1
-           7          17
-bending
-           5
-           7           1          17          -1           0           0
-           7           2          21          -1           0           0
-           7           4          25           1           0           0
-           7           5          26           1           0           0
-           7           6          27           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           4          23 -0.39400000000000002     
-vibration
-           1
-           7          18
-bending
-           5
-           7           1          18          -1           0           0
-           7           2          22          -1           0           0
-           7           3          25          -1           0           0
-           7           5          28           1           0           0
-           7           6          29           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           5          24 -0.39400000000000002     
-vibration
-           1
-           7          19
-bending
-           5
-           7           1          19          -1           0           0
-           7           2          23          -1           0           0
-           7           3          26          -1           0           0
-           7           4          28          -1           0           0
-           7           6          30           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           6          25 -0.39400000000000002     
-vibration
-           1
-           7          20
-bending
-           5
-           7           1          20          -1           0           0
-           7           2          24          -1           0           0
-           7           3          27          -1           0           0
-           7           4          29          -1           0           0
-           7           5          30          -1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           7          18   1.4600000000000000     
-vibration
-           6
-           1          15
-           2          16
-           3          17
-           4          18
-           5          19
-           6          20
-bending
-           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
 input_style
 explicit
 nunit
@@ -734,10 +381,10 @@ nmaxcbmc
 lpdbnames
  F
 unit ntype qqatom
-           1           5 -0.34999999999999998     
+           1           6  0.49320000000000003     
 vibration
            1
-           2           3
+           2           4
 bending
            1
            2           3           3           1           0           0
@@ -748,11 +395,11 @@ angle-angle
 improper torsion
            0
 unit ntype qqatom
-           2           4  0.69999999999999996     
+           2           7 -0.98640000000000005     
 vibration
            2
-           1           3
-           3           3
+           1           4
+           3           4
 bending
            0
 torsion
@@ -762,63 +409,13 @@ angle-angle
 improper torsion
            0
 unit ntype qqatom
-           3           5 -0.34999999999999998     
+           3           6  0.49320000000000003     
 vibration
            1
-           2           3
+           2           4
 bending
            1
            2           1           3           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-input_style
-explicit
-nunit
-           3
-nmaxcbmc
-           3
-lpdbnames
- F
-unit ntype qqatom
-           1          28  0.49320000000000003     
-vibration
-           1
-           2          23
-bending
-           1
-           2           3          32           1           0           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           2          29 -0.98640000000000005     
-vibration
-           2
-           1          23
-           3          23
-bending
-           0
-torsion
-           0
-angle-angle
-           0
-improper torsion
-           0
-unit ntype qqatom
-           3          28  0.49320000000000003     
-vibration
-           1
-           2          23
-bending
-           1
-           2           1          32           1           0           0
 torsion
            0
 angle-angle
