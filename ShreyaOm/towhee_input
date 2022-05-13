@@ -33,7 +33,7 @@ trmaxdispfreq
 volmaxdispfreq
 10
 linit   
-.false.
+.true.
 initboxtype
 'dimensions'
 initstyle
