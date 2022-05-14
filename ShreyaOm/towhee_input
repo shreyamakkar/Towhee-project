@@ -124,8 +124,8 @@ cbmc_setting_style
 ffnumber
 2
 ff_filename
-/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
-/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
+/home/omie/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
+/home/omie/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
 classical_potential
 'Lennard-Jones'      
 classical_mixrule
@@ -203,23 +203,23 @@ F
 forcefield
 'TraPPE-EH'
 charge_assignment
-'bond increment'
-unit ntype
-1    'H_h2'
+'manual'
+unit ntype qqatom
+1    'H_h2' +0.4932d0
 vibration
 1
 2
 improper torsion
 0
-unit ntype
-2    'COM_h2'
+unit ntype qqatom
+2    'COM_h2' -0.9864d0
 vibration
 2
 1 3
 improper torsion
 0
-unit ntype
-3    'H_h2'
+unit ntype qqatom
+3    'H_h2' +0.4932d0
 vibration
 1
 2

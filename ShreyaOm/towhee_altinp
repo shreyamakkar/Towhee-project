@@ -272,8 +272,8 @@ three_bond_fixed_endpoint_bias_style
 ffnumber
            2
 ff_filename
-/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H                                      
-/Users/shreyamakkar/Documents/Towhee/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm                                        
+/home/omie/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H                                                                
+/home/omie/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm                                                                  
 classical_potential
 'Lennard-Jones                 '
 classical_mixrule
