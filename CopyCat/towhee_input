@@ -1,13 +1,13 @@
 ensemble
 'npt'
 temperature
-273.95d0
+175.00d0
 pressure
 2000.0d0
 nmolty
 2
 nmolectyp
-1088 100
+1088 689
 numboxes
 2
 stepstyle
@@ -44,10 +44,10 @@ initlattice
 'simple cubic' 'simple cubic'
 initmol
 1088 0
-0 100
+0 689
 inix iniy iniz
 11    11    11
-5     5     5
+9     9     9
 hmatrix
 34.61d0 0.0d0 0.0d0
 0.0d0   34.61d0  0.0d0
@@ -124,8 +124,8 @@ cbmc_setting_style
 ffnumber
 2
 ff_filename
-/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
-/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
+/home/omie/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
+/home/omie/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
 classical_potential
 'Lennard-Jones'       
 classical_mixrule
