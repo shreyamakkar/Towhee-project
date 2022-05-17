@@ -1,0 +1,228 @@
+ensemble
+'npt'
+temperature
+273.95d0
+pressure
+2000.0d0
+nmolty
+2
+nmolectyp
+1088 100
+numboxes
+2
+stepstyle
+'cycles'
+nstep
+5
+printfreq 
+1   
+blocksize 
+1
+moviefreq
+50000
+backupfreq  
+1000
+runoutput
+'blocks'
+pdb_output_freq
+5
+pressure_virial_freq
+20
+trmaxdispfreq
+10
+volmaxdispfreq
+10
+linit   
+.true.
+initboxtype
+'dimensions'
+initstyle
+'coords' 'full cbmc'
+'full cbmc' 'full cbmc'
+initlattice
+'none' 'none'
+'simple cubic' 'simple cubic'
+initmol
+1088 0
+0 100
+inix iniy iniz
+11    11    11
+5     5     5
+hmatrix
+34.61d0 0.0d0 0.0d0
+0.0d0   34.61d0  0.0d0
+0.0d0 0.0d0  34.61d0   
+57.3d0 0.0d0 0.0d0
+0.0d0   57.3d0  0.0d0
+0.0d0   0.0d0   57.3d0
+pmvol
+0.002d0
+          pmvlpr
+          0.5d0 1.0d0
+          rmvol
+          0.0001d0 0.001d0
+          tavol
+          0.5d0
+pm2boxrbswap
+0.4d0
+          pm2rbswmt
+          0.0d0 1.0d0
+          pm2rbswpr
+          1.0d0
+pm2boxcbswap
+0.8d0
+          pm2cbswmt
+          0.0d0 1.0d0
+          pm2cbswpr
+          1.0d0
+pm1boxcbswap
+0.0d0
+          pm1cbswmt
+          0.0d0 1.0d0
+pmcb
+0.85d0
+          pmcbmt
+          0.5d0 1.0d0
+          pmall
+          0.0d0 0.0d0
+pmtraat
+0.0d0
+          pmtamt
+          0.33d0 1.0d0
+          rmtraa
+          0.2d0
+          tatraa
+          0.5d0
+pmcomposite
+0.90d0
+          pmcomt
+          0.5d0 1.0d0
+          rmcomtra
+          0.5d0
+          rmcomrot
+          0.05d0
+pmtracm
+0.95d0
+          pmtcmt
+          0.5d0 1.0d0
+          rmtrac
+          0.5d0
+          tatrac
+          0.5d0
+pmrotate
+1.0d0
+          pmromt
+          0.5d0 1.0d0
+          rmrot
+          0.05d0
+          tarot
+          0.5d0
+cbmc_formulation
+'Martin and Siepmann 1999 + Martin and Thompson 2004'
+cbmc_setting_style
+'default ideal' 
+ffnumber
+2
+ff_filename
+/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H
+/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm
+classical_potential
+'Lennard-Jones'       
+classical_mixrule
+'Lorentz-Berthelot'
+lshift
+.false.
+ltailc
+.true.
+rmin  
+0.1d0 
+rcut  
+10.0d0
+rcutin 
+4.0d0 
+electrostatic_form
+'coulomb'
+coulombstyle
+'ewald_fixed_kmax'
+kalp 
+5.6d0
+kmax
+7
+dielect
+1.0d0
+#tip4p2005 water
+input_style
+'basic connectivity map'
+nunit
+4
+nmaxcbmc
+4
+lpdbnames
+F
+forcefield
+'TIP4P2005'
+charge_assignment
+'manual'
+unit ntype qqatom
+1    'O'  0.000d0
+vibration
+3
+2 3 4
+improper torsion
+0
+unit ntype qqatom
+2    'H'  0.5564d0
+vibration
+1
+1
+improper torsion
+0
+unit ntype qqatom
+3    'H'  0.5564d0
+vibration
+1
+1
+improper torsion
+0
+unit ntype qqatom
+4    'M'  -1.1128d0
+vibration
+1
+1
+improper torsion
+0
+#Shreya and Om's force field for hydrogen molecule as a united atom
+input_style
+'basic connectivity map'
+nunit
+3
+nmaxcbmc
+3
+lpdbnames
+F
+forcefield
+'TraPPE-EH'
+charge_assignment
+'bond increment'
+unit ntype
+1    'H_h2'
+vibration
+1
+2
+improper torsion
+0
+unit ntype
+2    'COM_h2'
+vibration
+2
+1 3
+improper torsion
+0
+unit ntype
+3    'H_h2'
+vibration
+1
+2
+improper torsion
+0
+

@@ -1,0 +1,424 @@
+inputformat
+'Towhee'
+random_number_generator
+'DX-1597-2-7'
+random_seed
+     1302002
+random_allow_restart
+T
+ensemble
+'npt                           '
+temperature
+   273.94999999999999     
+pressure
+   2000.0000000000000     
+nmolty
+           2
+nmolectyp
+        1088         100
+numboxes
+           2
+stepstyle
+'cycles  '
+nstep
+           5
+controlstyle
+'manual              '
+printfreq
+           1
+blocksize
+           1
+moviefreq
+       50000
+backupfreq
+        1000
+restartfreq
+           0
+runoutput
+'blocks              '
+pdb_output_freq
+           5
+loutdft
+ F
+loutlammps
+ F
+loutdlpoly
+ F
+pressure_virial_freq
+          20
+pressure_thermo_freq
+           0
+pressure_thermo_style
+'range               '
+pressure_thermo_range
+  -1.0000000000000000E-002   1.0000000000000000E-002
+trmaxdispfreq
+          10
+volmaxdispfreq
+          10
+chempotperstep
+           0           0
+loutchempotdata
+ F
+linit
+ T
+initboxtype
+'dimensions          '
+initstyle
+ 'coords              ' 'full cbmc           ' 
+ 'full cbmc           ' 'full cbmc           ' 
+initlattice
+'none                ' 'none                '
+'simple cubic        ' 'simple cubic        '
+initmol
+        1088           0
+           0         100
+inix iniy iniz
+          11          11          11
+           5           5           5
+hmatrix
+   34.609999999999999        0.0000000000000000        0.0000000000000000     
+   0.0000000000000000        34.609999999999999        0.0000000000000000     
+   0.0000000000000000        0.0000000000000000        34.609999999999999     
+   57.299999999999997        0.0000000000000000        0.0000000000000000     
+   0.0000000000000000        57.299999999999997        0.0000000000000000     
+   0.0000000000000000        0.0000000000000000        57.299999999999997     
+pmvol
+0.0020
+          pmvlpr
+          .50000E+00 .10000E+01
+          rmvol
+          .10000E-03
+          tavol
+          .50000E+00
+pmcell
+0.0000
+          pmcellpr
+          .10000E+01 .10000E+01
+          pmcellpt
+          .50000E+00
+          rmcell
+          .10000E+01
+          tacell
+          .50000E+00
+pm2boxrbswap
+0.4000
+          pm2rbswmt
+          .00000E+00 .10000E+01
+          pm2rbswpr
+          .10000E+01
+pm2boxcbswap
+0.8000
+          pm2cbswmt
+          .00000E+00 .10000E+01
+          pm2cbswpr
+          .10000E+01
+pm2boxcomswitch
+0.0000
+          pm2comswboxpair
+          .10000E+01
+          pm2comswmolpair
+          .00000E+00
+pm1boxcbswap
+0.0000
+          pm1cbswmt
+          .00000E+00 .10000E+01
+pm1boxcomswitch
+0.0000
+          pm1comswbox
+          .00000E+00 .00000E+00
+          pm1comswpair
+          .00000E+00
+pmavb1
+0.0000
+          pmavb1in
+          .50000E+00
+          pmavb1mt
+          .10000E+01 .10000E+01
+          pmavb1ct
+          .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
+          avb1rad
+           0.1000
+pmavb2
+0.0000
+          pmavb2in
+          .50000E+00
+          pmavb2mt
+          .10000E+01 .10000E+01
+          pmavb2ct
+          .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
+          avb2rad
+           0.1000
+pmavb3
+0.0000
+          pmavb3mt
+          .10000E+01 .10000E+01
+          pmavb3ct
+          .10000E+01 .10000E+01
+          .10000E+01 .10000E+01
+          avb3rad
+           0.1000
+pmcb
+0.8500
+          pmcbmt
+          .50000E+00 .10000E+01
+          pmall
+          .00000E+00 .00000E+00
+pmback
+0.0000
+          pmbkmt
+          .10000E+01 .10000E+01
+pmcbside
+0.0000
+          pmcbsidemt
+          .10000E+01 .10000E+01
+pmpivot
+0.0000
+          pmpivmt
+          .10000E+01 .10000E+01
+pmconrot
+0.0000
+          pmcrmt
+          .10000E+01 .10000E+01
+pmcrback
+0.0000
+          pmcrbmt
+          .10000E+01 .10000E+01
+pmplane
+0.0000
+          pmplanebox
+          .10000E+01 .10000E+01
+          planewidth
+          .10000E+01
+pmrow
+0.0000
+          pmrowbox
+          .10000E+01 .10000E+01
+          rowwidth
+          .10000E+01
+pmtraat
+0.0000
+          pmtamt
+          .33000E+00 .10000E+01
+          rmtraa
+          .20000E+00
+          tatraa
+          .50000E+00
+pmcomposite
+          .90000E+00
+pmcomt
+          .50000E+00 .10000E+01
+rmcomtra
+          .50000E+00
+rmcomrot
+          .50000E-01
+pmtracm
+0.9500
+          pmtcmt
+          .50000E+00 .10000E+01
+          rmtrac
+          .50000E+00
+          tatrac
+          .50000E+00
+pmrotate
+1.0000
+          pmromt
+          .50000E+00 .10000E+01
+          rmrot
+          .50000E-01
+          tarot
+          .50000E+00
+cbmc_analysis
+'normal                        '
+cbmc_formulation      
+'Martin and Siepmann 1999 + Martin and Thompson 2004         '
+cbmc_setting_style
+'default ideal                 '
+cbmc_fit_strategy
+'equilibrium                   '
+cbmc_nb_one_generation 
+'uniform                       ' 'uniform                       '
+'uniform                       ' 'uniform                       '
+nch_nb_one
+          10          10
+nch_nb
+          10          10
+nch_pre_nb
+           1           1
+cbmc_dihedral_generation
+'ideal                         '
+nch_tor
+         360         360
+nch_tor_connect
+         360         360
+cbmc_bend_generation
+'ideal                         '
+nch_bend_a
+        1000        1000
+nch_bend_b
+        1000        1000
+max_bond_length
+   3.0000000000000000     
+cbmc_bond_generation
+'r^2 with bounds               '
+nch_vib
+        1000        1000
+two_bond_fixed_endpoint_bias_style
+'analytic Boltzmann dihedral energy sum            '
+three_bond_fixed_endpoint_bias_style
+'analytic using max and min 2-4 distance           '
+ffnumber
+           2
+ff_filename
+/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_TIP4P2005H                                                        
+/home/om/Downloads/towhee-8.2.3/ForceFields/towhee_ff_ShreyaOm                                                          
+classical_potential
+'Lennard-Jones                 '
+classical_mixrule
+'Lorentz-Berthelot             '
+lshift
+ F
+ltailc
+ T
+rmin
+  0.10000000000000001     
+rcut
+   10.000000000000000     
+rcutin
+   4.0000000000000000     
+electrostatic_form
+'coulomb                                           '
+coulombstyle
+'ewald_fixed_kmax    '
+kalp
+   5.5999999999999996     
+kmax
+           7
+dielect
+   1.0000000000000000     
+lcompute_madelung
+ F
+nfield
+           0
+solvation_style
+'none                '
+input_style
+explicit
+nunit
+           4
+nmaxcbmc
+           4
+lpdbnames
+ F
+unit ntype qqatom
+           1           2   0.0000000000000000     
+vibration
+           3
+           2           1
+           3           1
+           4           2
+bending
+           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
+unit ntype qqatom
+           2           1  0.55640000000000001     
+vibration
+           1
+           1           1
+bending
+           2
+           1           3           1           1           0           0
+           1           4           2          -1           0           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
+unit ntype qqatom
+           3           1  0.55640000000000001     
+vibration
+           1
+           1           1
+bending
+           2
+           1           2           1           1           0           0
+           1           4           2          -1           0           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
+unit ntype qqatom
+           4           3  -1.1128000000000000     
+vibration
+           1
+           1           2
+bending
+           2
+           1           2           2           1           0           0
+           1           3           2           1           0           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
+input_style
+explicit
+nunit
+           3
+nmaxcbmc
+           3
+lpdbnames
+ F
+unit ntype qqatom
+           1           6  0.49320000000000003     
+vibration
+           1
+           2           4
+bending
+           1
+           2           3           3           1           0           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
+unit ntype qqatom
+           2           7 -0.98640000000000005     
+vibration
+           2
+           1           4
+           3           4
+bending
+           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
+unit ntype qqatom
+           3           6  0.49320000000000003     
+vibration
+           1
+           2           4
+bending
+           1
+           2           1           3           1           0           0
+torsion
+           0
+angle-angle
+           0
+improper torsion
+           0
