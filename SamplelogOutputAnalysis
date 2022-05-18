@@ -350,7 +350,7 @@ Total classical                                            -31730.842 [K]       
  initial virial pressure in box  1 =     -560501.80
  initial virial pressure in box  2 =        4739.10
 
- +++++ start of markov chain +++++
+ +++++ start of markov chain +++++ #THIS IS WHERE THE ACTUAL SIMULATION RESULTS COME IN
 
 Cycle      Box   Energy [K]  Volume [A^3] Press. [kPa] Molecules
          1 B: 1 -0.8032E+07  0.4146E+05    -560501.8  1088   22
@@ -371,7 +371,7 @@ BA Box: 1 Coulomb         -.95797988E+07
 BA Box: 1 Tail vdw        -.22767198E+05
 BA Box: 1 Solvation       0.00000000E+00
 BA Box: 1 u (Gibbs Total) [K] Type   1 0.00000000E+00
-BA Box: 1 u (Gibbs Total) [K] Type   2 -.29731511E+04
+BA Box: 1 u (Gibbs Total) [K] Type   2 -.29731511E+04  #gibbs energy
 BA Box: 1 Number density [nm-3] Type   1 0.26243642E+02
 BA Box: 1 Number density [nm-3] Type   2 0.25998278E+00
 BA Box: 1 Mol Fraction Type   1 0.99022111E+00
