@@ -53,7 +53,7 @@
  temperature:  175.000    #Mentions the temperature
  pressure:  2000.00    #Pressure is in kPa
  nmolty:            2
- nmolectyp:         1088          689
+ nmolectyp:         1088          689 #water in box1, hydrogen in box2
  numboxes:            2
  stepstyle: cycles  
  nstep:            5  #We need to change this to a bigger number later
@@ -64,9 +64,9 @@
  runoutput: blocks              
 Output running block averages
  pdb_output_freq:            5  #Rate with which pdb files are generated
- pressure_virial_freq:           20
- trmaxdispfreq:           10
- volmaxdispfreq:           10
+ pressure_virial_freq:           20 #step frequency for computing the pressure via the pressure virial
+ trmaxdispfreq:           10 #step frequency for updating the maximum translational and rotational displacements.
+ volmaxdispfreq:           10#step frequency for updating the maximum volume displacements
  linit:  T
  initboxtype: dimensions          
 initstyle Box:    1
@@ -77,7 +77,7 @@ Box:  1 initlattice: none                 none
 Box:  2 initlattice: simple cubic         simple cubic        
 Box:  1 initmol:      1088          0
 Box:  2 initmol:         0        689
-Box:  1 inix,iniy,iniz:        11         11         11
+‏Box:  1 inix,iniy,iniz:        11         11         11 #initial number of molecules
 Box:  2 inix,iniy,iniz:         9          9          9
 Box idim hmatrix:    1 1   34.61000    0.00000    0.00000
 Box idim hmatrix:    1 2    0.00000   34.61000    0.00000
@@ -89,33 +89,33 @@ Box idim hmatrix:    2 3    0.00000    0.00000   57.30000
 
 #From here on, I am using the following link: http://towhee.sourceforge.net/input/towhee_input_v8_0_x.html 
 itest:  1 pairbox:  1   2
- pmvol: 0.200000E-02
- pmvlpr: 0.500000      1.00000    #probability of volume move (Given in paper)
+ pmvol: 0.200000E-02 #Probability of performing a volume move
+ pmvlpr: 0.500000      1.00000    #probability of volume move on a particular box(Given in paper)
  rmvol: 0.100000E-03  #initial Maximum volume displacement
- tavol: 0.500000    #target acceotance rate for the volume move
+ tavol: 0.500000    #target acceptance rate for the volume move
  pm2boxrbswap: 0.400000    #Exchanging molecules in boxes rotational bias
- pm2rbswmt:  0.00000      1.00000    #prob based on each box
+ pm2rbswmt:  0.00000      1.00000    #prob based on each molecule type
  pm2rbswpr:  1.00000    #prob based on each box pair
  pm2boxcbswap: 0.800000  #  Cumulative probability of performing a configurational-bias interbox molecule transfer move
- pm2cbswmt:  0.00000      1.00000    #based in each box
+ pm2cbswmt:  0.00000      1.00000    #based in each molecule type
  pm2cbswpr:  1.00000    #based on box pair
  pm1boxcbswap:  0.00000    #This move takes a molecule out of one box and tries to place it back into the same box
- pm1cbswmt:  0.00000      1.00000    
+ pm1cbswmt:  0.00000      1.00000    #prob based on each molecule type
  pmcb: 0.850000    #prob of molecule regrowth
- pmcbmt: 0.500000      1.00000    #sub part
- pmall:  0.00000      0.00000    #subpart
+ pmcbmt: 0.500000      1.00000    # prob based on each molecule type
+ pmall:  0.00000      0.00000    #prob that entire molecule will be regrown
  pmtraat:  0.00000    # single-atom translation move on a molecule
  pmtamt: 0.330000      1.00000    #molecule based
  rmtraa: 0.200000    #all molecules in all boxes
- tatraa: 0.500000    #target acceptance rate
+ tatraa: 0.500000    #target acceptance rate for the center-of-mass translation move
  pmcomposite: 0.900000    #random center-of-mass translation and random rotation
  pmcomt: 0.500000      1.00000    #molecule based
  rmcomtra: 0.500000    #molecular translation displacement (angstroms) for all molecule types in all boxes
  rmcomrot: 0.500000E-01  #molecular rotation maximum displacement 
  pmtracm: 0.950000    #center-of-mass translation move on a molecule without regard to which box the molecule is currently located in
- pmtcmt: 0.500000      1.00000    
- rmtrac: 0.500000    
- tatrac: 0.500000    
+ pmtcmt: 0.500000      1.00000    #Probability of performing a center-of-mass translation move on each type of molecule in the system
+ rmtrac: 0.500000    #maximum displacement for all molecule types in all boxes
+ tatrac: 0.500000    # target acceptance rate
  pmrotate:  1.00000    #rotation
  pmromt: 0.500000      1.00000    
  rmrot: 0.500000E-01
@@ -135,7 +135,7 @@ default max_bond_length:  3.00 #maximum allowed value for any bond length in the
  classical_potential: Lennard-Jones                 
  READCLASSICAL: pot_num:     1 potential name: Lennard-Jones                 
  classical_mixrule: Lorentz-Berthelot             
- lshift:  F #non bonded potential is shifted
+ lshift:  F #we do not want to shift non bonded potential 
  ltailc:  T #apply analytical tail corrections for the portion of the potential that is past the cutoff
  rmin: 0.100000    #hard inner cutoff
  rcut:  10.0000    #The distance (in Angstroms) beyond which the nonbonded potential (and density potential in the case of Embedded Atom Method) are no longer computed
@@ -351,7 +351,7 @@ Total classical                                            -31730.842 [K]       
  initial virial pressure in box  2 =        4739.10
 
  +++++ start of markov chain +++++ #THIS IS WHERE THE ACTUAL SIMULATION RESULTS COME IN
-
+#markov chain is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
 Cycle      Box   Energy [K]  Volume [A^3] Press. [kPa] Molecules
          1 B: 1 -0.8032E+07  0.4146E+05    -560501.8  1088   22
            B: 2 -0.3057E+05  0.1881E+06       4739.1     0  667
